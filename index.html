@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070b14" />
+  <title>Happy Birthday Bhaiya ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Opening Screen -->
+  <section id="welcome" class="welcome-screen">
+    <div class="welcome-card">
+      <p class="small-label">A SPECIAL DAY FOR A SPECIAL PERSON</p>
+      <h1>For My Bhaiya ❤️</h1>
+      <p class="welcome-text">
+        Today is not just another day. It is the birthday of someone who has always been a strong part of my life.
+      </p>
+      <button id="startBtn" class="primary-btn">Tap to Begin ✨</button>
+      <p class="tap-note">Best viewed with sound on 🔊</p>
+    </div>
+  </section>
+
+  <!-- Music -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <main id="mainContent" class="hidden">
+
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="floating-glow glow-1"></div>
+      <div class="floating-glow glow-2"></div>
+
+      <div class="hero-content">
+        <div class="photo-frame">
+          <img src="assets/images/bhaiya-main.jpg" alt="Bhaiya" />
+        </div>
+
+        <p class="eyebrow">TODAY IS YOUR DAY</p>
+        <h2>Happy Birthday Bhaiya 🎂</h2>
+        <h3 id="brotherName">My Dear Bhaiya</h3>
+
+        <p class="hero-message">
+          Not just my brother, but one of the strongest pillars of my life.
+          Thank you for always being there.
+        </p>
+
+        <div class="scroll-hint">Scroll for your surprise ↓</div>
+      </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="section soft-section">
+      <div class="section-heading">
+        <span>THE MOMENT WE CELEBRATE</span>
+        <h2>Birthday Countdown 🎉</h2>
+      </div>
+
+      <div id="countdown" class="countdown">
+        <div class="time-card"><strong id="days">00</strong><span>Days</span></div>
+        <div class="time-card"><strong id="hours">00</strong><span>Hours</span></div>
+        <div class="time-card"><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div class="time-card"><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+
+      <div id="birthdayMessage" class="birthday-now hidden">
+        It’s Your Day! 🎂❤️
+      </div>
+    </section>
+
+    <!-- Memories -->
+    <section class="section">
+      <div class="section-heading">
+        <span>MEMORIES THAT MATTER</span>
+        <h2>Some Beautiful Moments 📸</h2>
+      </div>
+
+      <div class="gallery">
+        <img src="assets/images/photo1.jpg" alt="Memory 1">
+        <img src="assets/images/photo2.jpg" alt="Memory 2">
+        <img src="assets/images/photo3.jpg" alt="Memory 3">
+        <img src="assets/images/photo4.jpg" alt="Memory 4">
+        <img src="assets/images/photo5.jpg" alt="Memory 5">
+        <img src="assets/images/photo6.jpg" alt="Memory 6">
+      </div>
+    </section>
+
+    <!-- Journey -->
+    <section class="section soft-section">
+      <div class="section-heading">
+        <span>FROM THEN TO NOW</span>
+        <h2>Our Journey ❤️</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="timeline-card">
+            <h3>Childhood</h3>
+            <p>Those simple days, silly fights, laughter and memories that will always stay close to my heart.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="timeline-card">
+            <h3>Growing Up</h3>
+            <p>As I grew older, I started realizing how much I had learned just by watching you.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="timeline-card">
+            <h3>Today</h3>
+            <p>No matter how much time changes, you will always remain one of the most important people in my life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section class="section">
+      <div class="section-heading">
+        <span>SOMETHING FROM MY HEART</span>
+        <h2>A Letter For You 💌</h2>
+      </div>
+
+      <div class="letter-wrap">
+        <div id="envelope" class="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter-card">
+            <h3>Dear Bhaiya,</h3>
+            <p>
+              I may not always say it, but I am truly grateful to have you in my life.
+              You have supported me, guided me, and given me more than I can ever express in words.
+            </p>
+            <p>
+              I hope this new year of your life brings you peace, success, good health and everything
+              you have been working for.
+            </p>
+            <p>
+              No matter where life takes us, I will always be proud to call you my brother.
+            </p>
+            <p class="signature">With love ❤️<br>Manjit</p>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+        </div>
+
+        <button id="letterBtn" class="secondary-btn">Open Letter 💌</button>
+      </div>
+    </section>
+
+    <!-- Things I Never Say -->
+    <section class="section soft-section">
+      <div class="section-heading">
+        <span>WORDS I DON'T SAY ENOUGH</span>
+        <h2>Things I Want You To Know 🫂</h2>
+      </div>
+
+      <div class="message-grid">
+        <div class="message-card">Thank you for always supporting me.</div>
+        <div class="message-card">I have learned so much from you.</div>
+        <div class="message-card">I may not say it often, but I’m lucky to have you.</div>
+        <div class="message-card">You will always have your little brother by your side.</div>
+      </div>
+    </section>
+
+    <!-- Surprise Video -->
+    <section class="section">
+      <div class="section-heading">
+        <span>ONE MORE THING</span>
+        <h2>I Have A Surprise For You 🎁</h2>
+      </div>
+
+      <div class="surprise-box">
+        <button id="surpriseBtn" class="primary-btn">Open Surprise 🎁</button>
+
+        <div id="videoBox" class="video-box hidden">
+          <video controls playsinline>
+            <source src="assets/video/surprise-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final -->
+    <section class="section finale soft-section">
+      <div class="cake">🎂</div>
+      <h2>Once Again, Happy Birthday Bhaiya ❤️</h2>
+      <p>
+        May this year bring you countless reasons to smile, grow and celebrate.
+      </p>
+      <button id="celebrateBtn" class="primary-btn">Celebrate Again 🎉</button>
+      <p class="made-by">Made with ❤️ by Manjit</p>
+    </section>
+
+  </main>
+
+  <button id="musicToggle" class="music-toggle hidden" aria-label="Toggle music">🔊</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
